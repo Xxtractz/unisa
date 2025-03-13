@@ -1,6 +1,6 @@
-# unisa
-Not All Activities are here
+# UNISA
+###### Tasks and activities for UNISA related modules, (NO ASSIGNMENTS AVAILABLE HERE)
 
->> There is also some fun stuff to look at, When it's all said and done we are just having fun 
-
-*** Links are coming soon***
+---
+## Getting Started with C++ video Links 
+[Video Links](Gettingstarted%20with%20C++%20video%20Links.md)
