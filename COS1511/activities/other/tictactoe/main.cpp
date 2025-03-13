@@ -45,7 +45,6 @@ int main()
 
 void printGameBoard(char gameboard[SIZE][SIZE]){
     printLineBreaker();
-
     for (int row = 0 ; row < SIZE; row++){
         cout << "| ";
         for (int col = 0; col < SIZE; col++){
