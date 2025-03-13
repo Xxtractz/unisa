@@ -8,91 +8,68 @@
 
 using namespace std;
 
+char x = 'X'; // global variables
+char o = 'O';
+char pH  = '-';
+const int SIZE = 3;
+
+//Prototype a function
+char handleInput(int input);
+void printStart();
+void printLineBreaker();
+void printGameBoard(char gameboard[SIZE][SIZE]);
+
 int main()
 {
+    char gameBoard[SIZE][SIZE] = {{pH,pH,pH},
+                            {pH,pH,pH},
+                            {pH,pH,pH}};
+    bool gameOver = false;
 
-    char position0 = '-';
-    char position1 = '-';
-    char position2 = '-';
-    char position3 = '-';
-    char position4 = '-';
-    char position5 = '-';
-    char position6 = '-';
-    char position7 = '-';
-    char position8 = '-';
-    int input;
+    printStart();
 
-    cout << " Please enter position 1 - 9, see Example below..." << endl;
-    cout << " 1 | 2 | 3" << endl;
-    cout << " 4 | 5 | 6" << endl;
-    cout << " 7 | 8 | 9" << endl;
-
-    // Determine Players ... Player 1 is X and Player 2 O
-    // We need to know who's turn is it
-    bool isPlayer1Turn = true;
-
-
-    // if player's turn check if position is available
-
-    char x = 'X';
-    char o = 'O';
-    char playChar;
-    string player;
-    while (true)
+    while (!gameOver)
     {
+        printGameBoard(gameBoard);
 
-        if (isPlayer1Turn){
-            player = "Player 1" ;
-        }else{
-            player = "Player 2" ;
-        }
-        // player = isPlayer1Turn ? "Player 1" : "Player 2" ;
-        cout << player << " : Please choose your Position : ";
-        cin >> input;
-        cout << endl;
         // handle the input
+        // PLayer inputs position 1, 
+        // we need to change player turn and also be able to Check if position doesn't contain X/O
+
         // Validations
+        gameOver = true;
 
-
-
-
-        switch (input)
-        {
-        case 1: 
-            position0 = playChar;
-            break;
-        case 2:
-            position1 = playChar;
-            break;
-        case 3:
-            position2 = playChar;
-            break;
-        case 4:
-            position3 = playChar;
-            break;
-        case 5:
-            position4 = playChar;
-            break;
-        case 6:
-            position5 = playChar;
-            break;
-        case 7:
-            position6 = playChar;
-            break;
-        case 8:
-            position7 = playChar;
-            break;
-        case 9:
-            position8 = playChar;
-            break;
-
-        default:
-            exit(1);
-        }
-
-        cout << " " << position0 << " | " << position1 << " | " << position2 << endl;
-        cout << " " << position3 << " | " << position4 << " | " << position5 << endl;
-        cout << " " << position6 << " | " << position7 << " | " << position8 << endl;
     }
     return 0;
 }
+
+void printGameBoard(char gameboard[SIZE][SIZE]){
+    printLineBreaker();
+
+    for (int row = 0 ; row < SIZE; row++){
+        cout << "| ";
+        for (int col = 0; col < SIZE; col++){
+            cout << gameboard[row][col] << " | ";
+        }
+        cout << endl;
+    }
+    printLineBreaker();
+}
+
+void printLineBreaker(){
+    cout << "--------------\n"; 
+}
+
+void printStart(){
+    cout << "Welcome to the TIC TAC TOE Game........" << endl;
+    cout << "How to Play \n Please enter position 1 - 9, see Example below..." << endl;
+    cout << " 1 | 2 | 3" << endl;
+    cout << " 4 | 5 | 6" << endl;
+    cout << " 7 | 8 | 9" << endl;
+}
+
+char handleInput(int input){
+
+    return x;
+}
+// That's if the function/method comes after  the main();
