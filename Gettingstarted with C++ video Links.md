@@ -1,5 +1,9 @@
 # Getting Started with C++ video Links
 
+---
+Google meet meeting invite link: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSe6dL91WqoEwgiPs6KzqoHY8IWDRZndnEr2UVtXIaJMb-xr3g/viewform?usp=header)
+---
+
 ## Videos of the past Sessions
 
 - [Week 00](https://drive.google.com/file/d/1_7TkKGd7GUpTbvQ7BMRfWHwBWP_RDtZD/view?usp=drive_link)

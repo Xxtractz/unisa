@@ -5,6 +5,8 @@
         "ostream": "cpp",
         "istream": "cpp",
         "__locale": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "print": "cpp",
+        "bitset": "cpp"
     }
 }
